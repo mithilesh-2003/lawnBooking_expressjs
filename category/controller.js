@@ -10,10 +10,7 @@ exports.createCategory = catchAsyncError(async (req, res, next) => {
     const category = await prisma.categories.create({
       data: req.body,
     })
-<<<<<<< HEAD
     console.log(category)
-=======
->>>>>>> b027ce5e7328f3376dc6bf915f26ff8dc53b57ec
     res.json({ message: "create category successful", category })
   } catch (e) {
     if (e.code === 'P2002') {
@@ -33,8 +30,6 @@ exports.getCategories = catchAsyncError(async (req, res, next) => {
   } catch (e) {
     return next(new ServerError(500, e.message))
   }
-<<<<<<< HEAD
-=======
 })
 
 exports.updateCategory = catchAsyncError(async (req, res, next) => {
@@ -53,5 +48,4 @@ exports.updateCategory = catchAsyncError(async (req, res, next) => {
   } catch (e) {
     return next(new ServerError(500, e.message))
   }
->>>>>>> b027ce5e7328f3376dc6bf915f26ff8dc53b57ec
 })

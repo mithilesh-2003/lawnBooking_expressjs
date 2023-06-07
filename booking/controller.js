@@ -10,11 +10,7 @@ exports.createBooking = catchAsyncError(async (req, res, next) => {
     return next(new ServerError(400, "date not supplied"))
   }
 
-<<<<<<< HEAD
-  const bookingDate = dayjs(req.body.date, "DD-MM-YYYY",true)
-=======
   const bookingDate = dayjs(req.body.date, "DD-MM-YYYY", true)
->>>>>>> b027ce5e7328f3376dc6bf915f26ff8dc53b57ec
 
   if (dayjs().isAfter(bookingDate)) {
     return next(new ServerError(400, "please book in future available date"))

@@ -23,11 +23,8 @@
     "helmet": "^7.0.0",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.0",
-<<<<<<< HEAD
     "nodemailer-express-handlebars": "^6.1.0",
-=======
     "nodemailer": "^6.9.2",
->>>>>>> b027ce5e7328f3376dc6bf915f26ff8dc53b57ec
     "validator": "^13.9.0"
   },
   "devDependencies": {

@@ -9,13 +9,9 @@ const userRouter = require("./user/router")
 const employeeRouter = require("./employee/router")
 const categoryRouter = require("./category/router")
 const assetRouter = require("./asset/router")
-<<<<<<< HEAD
-const bookingRouter =require("./booking/router")
 
 
-=======
 const bookingRouter = require("./booking/router")
->>>>>>> b027ce5e7328f3376dc6bf915f26ff8dc53b57ec
 
 app.use(cors());
 app.use(helmet());
